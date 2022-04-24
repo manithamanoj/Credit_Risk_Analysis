@@ -9,22 +9,24 @@ We evaluate three machine learning models by using resampling to determine which
 
 ### Naive Random Oversampling
 <img width="765" alt="Screen Shot 2022-04-24 at 11 08 40 AM" src="https://user-images.githubusercontent.com/72629108/164990548-7ddcf89a-7d95-4dfe-91cd-02e7be3b8925.png">
+* The balanced accuracy score: 0.6550983384119515
 
 ### SMOTE Oversampling
 <img width="774" alt="Screen Shot 2022-04-24 at 11 09 06 AM" src="https://user-images.githubusercontent.com/72629108/164990562-e9ad2401-41f7-4709-a8cb-820aa7faf0fb.png">
-
+* The balanced accuracy score: 0.662394124702461
 ### ClusterCentroids resampler
 <img width="774" alt="Screen Shot 2022-04-24 at 11 09 56 AM" src="https://user-images.githubusercontent.com/72629108/164990568-e88a087d-0c1e-4f4e-834b-d483150c6c61.png">
-
+* The balanced accuracy score: 0.5442661782548694
 ### SMOTEENN
 Next we use a combinatorial approach of over- and undersampling with the SMOTEENN algorithm to determine if the results from the combinatorial approach are better at predicting credit risk. First, we resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report
 <img width="787" alt="Screen Shot 2022-04-24 at 11 10 26 AM" src="https://user-images.githubusercontent.com/72629108/164990574-835b6e07-e51c-43df-bbb3-7df195bb3b7f.png">
-
+* The balanced accuracy score: 0.6447701423556762
 
 ## Credit risk ensemble
 Using your knowledge of the imblearn.ensemble library, we train and compare two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk and evaluate each model. . First we resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
 ## Balanced Random Forest Classifier
 <img width="788" alt="Screen Shot 2022-04-24 at 11 23 37 AM" src="https://user-images.githubusercontent.com/72629108/164990836-c3dccc7e-f529-4cdb-a286-73cfc6e7def9.png">
-
+* The balanced accuracy score: 0.7877672625306695
 ## EasyEnsembleClassifier
 <img width="780" alt="Screen Shot 2022-04-24 at 11 24 04 AM" src="https://user-images.githubusercontent.com/72629108/164990854-aeb9b402-e7b7-4fc5-9ff8-7680ca9e549b.png">
+* The balanced accuracy score: 0.925427358175101
