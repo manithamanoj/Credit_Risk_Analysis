@@ -4,6 +4,10 @@
 In this challenge we are going to apply machine learning to solve a real-world challenge, credit card risk. Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans.
    Here we are going to use the credit card credit dataset from LendingClub, a peer-to-peer lending services company. We’ll oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. Then, use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, we compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. Finally we evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
 ## Analysis
+Checking the balance of our target values.
+
+<img width="784" alt="Screen Shot 2022-04-24 at 12 43 26 PM" src="https://user-images.githubusercontent.com/72629108/164993738-c56d700d-8f80-404f-9ba7-6eaeae0095d2.png">
+
 ## Credit Risk Resampling Techniques
 We evaluate three machine learning models by using resampling to determine which is better at predicting credit risk using imbalanced-learn and scikit-learn libraries.  First, we use the oversampling RandomOverSampler and SMOTE algorithms, and then  use the undersampling ClusterCentroids algorithm. First we resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
 
@@ -36,3 +40,6 @@ Using your knowledge of the imblearn.ensemble library, we train and compare two 
 <img width="780" alt="Screen Shot 2022-04-24 at 11 24 04 AM" src="https://user-images.githubusercontent.com/72629108/164990854-aeb9b402-e7b7-4fc5-9ff8-7680ca9e549b.png">
 
 * The balanced accuracy score: 0.925427358175101
+
+## Summary
+The EasyEnsembleClassifier is the best model to reccomend,which has  an accuracy score  around 93%. Also the precision is 7% ,recall(sensitivity) 91% and the largest F1 score 0.14for EasyEnsembleClassifier. All other models have accuracy score less than 80 %. All the models has weak precision  when credit risk is at "high risk".
