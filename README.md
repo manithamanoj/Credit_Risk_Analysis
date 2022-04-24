@@ -42,4 +42,4 @@ Using our knowledge of the imblearn.ensemble library, we train and compare two d
 * The balanced accuracy score: 0.925427358175101
 
 ## Summary
-The EasyEnsembleClassifier is the best model to reccomend,which has an accuracy score around 93%. Also the precision is 7%, recall(sensitivity) 91% and the largest F1 score 0.14 for EasyEnsembleClassifier. All other models have accuracy score less than 80%. All the models has weak precision when credit risk is at "high risk".
+The EasyEnsembleClassifier is the best model to reccomend, which has an accuracy score around 93%. Also the precision is 7%, recall (sensitivity) 91% and the largest F1 score 0.14 for EasyEnsembleClassifier. All other models have accuracy score less than 80%. All the models has weak precision when credit risk is at "high risk".
