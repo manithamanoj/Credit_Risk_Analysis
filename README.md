@@ -1,7 +1,7 @@
 # Credit_Risk_Analysis
 
 ## Introduction
-In this challenge we are going to apply machine learning to solve a real-world challenge, credit card risk. Credit card risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans.
+In this challenge we are going to apply machine learning to solve a real-world challenge, credit risk. Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans.
    Here we are going to use the credit card credit dataset from LendingClub, a peer-to-peer lending services company. We’ll oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. Then, use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, we compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. Finally we evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
 ## Analysis
 Checking the balance of our target values.
@@ -31,7 +31,7 @@ Next we use a combinatorial approach of over- and undersampling with the SMOTEEN
 * The balanced accuracy score: 0.6447701423556762
 
 ## Credit risk ensemble
-Using our knowledge of the imblearn.ensemble library, we train and compare two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk and evaluate each model. . First we resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
+Using our knowledge of the imblearn.ensemble library, we train and compare two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk and evaluate each model.First we resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
 ## Balanced Random Forest Classifier
 <img width="788" alt="Screen Shot 2022-04-24 at 11 23 37 AM" src="https://user-images.githubusercontent.com/72629108/164990836-c3dccc7e-f529-4cdb-a286-73cfc6e7def9.png">
 
@@ -42,4 +42,4 @@ Using our knowledge of the imblearn.ensemble library, we train and compare two d
 * The balanced accuracy score: 0.925427358175101
 
 ## Summary
-The EasyEnsembleClassifier is the best model to reccomend,which has  an accuracy score  around 93%. Also the precision is 7%, recall(sensitivity) 91% and the largest F1 score 0.14for EasyEnsembleClassifier. All other models have accuracy score less than 80 %. All the models has weak precision  when credit risk is at "high risk".
+The EasyEnsembleClassifier is the best model to reccomend,which has an accuracy score around 93%. Also the precision is 7%, recall(sensitivity) 91% and the largest F1 score 0.14 for EasyEnsembleClassifier. All other models have accuracy score less than 80%. All the models has weak precision when credit risk is at "high risk".
